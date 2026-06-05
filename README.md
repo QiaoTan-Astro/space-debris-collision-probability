@@ -1,2 +1,3 @@
 # space-debris-collision-probability
 A C++ toolkit calculating space object collision probabilities using SGP4 propagation, Chan's method, and path-splitting numerical integration.
+This repository contains a highly optimized C++ computational pipeline for space debris rendezvous evaluation and risk analysis. By parsing large-scale Two-Line Element (TLE) catalogs via the SGP4 model, it implements a coarse-to-fine temporal grid-search algorithm with dynamic pruning to efficiently detect the Time of Closest Approach (TCA). The pipeline adaptively applies Chan's analytical method for high-speed encounters and a path-splitting 3D numerical integration model for low-speed interactions.
